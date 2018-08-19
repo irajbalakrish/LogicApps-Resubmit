@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Threading.Tasks;
+using LogicApp.Resubmit.Azure;
+using LogicApp.Resubmit.Configuration;
 
 namespace LogicApp.Resubmit
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+         static async Task Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            Config.StartupConfiguration();
+
+            await ResubmitLogicApp.RetrieveTokenAsync();
         }
     }
 }

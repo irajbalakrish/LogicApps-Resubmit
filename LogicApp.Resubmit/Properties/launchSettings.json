@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LogicApp.Resubmit": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "production"
+      }
+    }
+  }
+}
